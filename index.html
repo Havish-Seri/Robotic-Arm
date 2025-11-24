@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotic Arm Controller</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Robotic Arm Controller</h1>
+
+  <div id="container">
+    <button id="connectBtn">🔌 Connect to Arduino</button>
+
+    <div class="control-block">
+      <div class="control-label">Base <span id="bVal">90°</span></div>
+      <input type="range" id="base" min="0" max="180" value="90">
+    </div>
+
+    <div class="control-block">
+      <div class="control-label">Shoulder <span id="sVal">90°</span></div>
+      <input type="range" id="shoulder" min="0" max="180" value="90">
+    </div>
+
+    <div class="control-block">
+      <div class="control-label">Elbow <span id="eVal">90°</span></div>
+      <input type="range" id="elbow" min="0" max="180" value="90">
+    </div>
+
+    <div class="control-block">
+      <div class="control-label">Wrist <span id="wVal">90°</span></div>
+      <input type="range" id="wrist" min="0" max="180" value="90">
+    </div>
+
+    <div class="control-block">
+      <div class="control-label">Gripper <span id="gVal">90°</span></div>
+      <input type="range" id="gripper" min="0" max="180" value="90">
+    </div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
